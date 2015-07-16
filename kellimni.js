@@ -1,6 +1,6 @@
 Tasks = new Mongo.Collection("tasks");
 
-if (Meteor.isClient) {
+if (Meteor.isClient || Meteor.isCordova) {
 
     // This code only runs on the client
     angular.module("simple-todos",['angular-meteor']);
